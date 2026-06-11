@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">GUI Automation Framework Suite</th></tr>
+<tr><td><a href="#t0">GUI Tests</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">356,687</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">GUI Automation Framework Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">GUI Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.FormTest</td><td><a href="#m0">fillFormTest</a></td><td rowspan="1">1780920506900</td><td rowspan="1">97</td></tr><tr class="failedodd"><td rowspan="1">testcases.UploadTest</td><td><a href="#m1">uploadFileTest</a></td><td rowspan="1">1780920840622</td><td rowspan="1">6169</td></tr><tr><th colspan="4">GUI Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.AlertTest</td><td><a href="#m2">alertValidation</a></td><td rowspan="1">1780920517316</td><td rowspan="1">14218</td></tr><tr class="passedodd"><td rowspan="1">testcases.DragDropTest</td><td><a href="#m3">dragDropValidation</a></td><td rowspan="1">1780920541064</td><td rowspan="1">20436</td></tr><tr class="passedeven"><td rowspan="1">testcases.MouseActionTest</td><td><a href="#m4">mouseActionValidation</a></td><td rowspan="1">1780920571269</td><td rowspan="1">27460</td></tr><tr class="passedodd"><td rowspan="5">testcases.NavigationScrollTest</td><td><a href="#m5">blogSection</a></td><td rowspan="1">1780920732625</td><td rowspan="1">19235</td></tr><tr class="passedodd"><td><a href="#m6">homeSection</a></td><td rowspan="1">1780920609520</td><td rowspan="1">18460</td></tr><tr class="passedodd"><td><a href="#m7">onlineTrainingSection</a></td><td rowspan="1">1780920698699</td><td rowspan="1">23569</td></tr><tr class="passedodd"><td><a href="#m8">playwrightPracticeSection</a></td><td rowspan="1">1780920761450</td><td rowspan="1">18368</td></tr><tr class="passedodd"><td><a href="#m9">udemySection</a></td><td rowspan="1">1780920635625</td><td rowspan="1">52751</td></tr><tr class="passedeven"><td rowspan="1">testcases.ScrollTest</td><td><a href="#m10">scrollValidation</a></td><td rowspan="1">1780920789660</td><td rowspan="1">36549</td></tr></tbody>
+</table>
+<h2>GUI Tests</h2><h3 id="m0">testcases.FormTest#fillFormTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.FileNotFoundException: C:\Users\SumanKumar\eclipse-workspace\GUIElement_Capstone\src\test\resources\testdata\TestData1.xlsx (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:152)
+	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:106)
+	at utilities.ExcelUtils.getCellData(ExcelUtils.java:17)
+	at testcases.FormTest.fillFormTest(FormTest.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testcases.UploadTest#uploadFileTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : C:\Users\naren\OneDrive\TestData1.xlsx
+  (Session info: chrome=148.0.7778.218)
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [324fcebb08cadc4184987c66b8352afc, sendKeysToElement {value=[Ljava.lang.CharSequence;@33e4b9c4, id=f.A6D576C6F6B253996354CCC8F2B97DA8.d.FB33A211A58F627363253F9C1E1156E9.e.165}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.218, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\SUMANK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55599}, goog:processID: 9192, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55599/devtoo..., se:cdpVersion: 148.0.7778.218, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (324fcebb08cadc4184987c66b8352afc)] -&gt; id: singleFileInput]
+Session ID: 324fcebb08cadc4184987c66b8352afc
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at pages.UploadPage.uploadFile(UploadPage.java:22)
+	at testcases.UploadTest.uploadFileTest(UploadTest.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testcases.AlertTest#alertValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testcases.DragDropTest#dragDropValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testcases.MouseActionTest#mouseActionValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testcases.NavigationScrollTest#blogSection</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testcases.NavigationScrollTest#homeSection</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">testcases.NavigationScrollTest#onlineTrainingSection</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">testcases.NavigationScrollTest#playwrightPracticeSection</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">testcases.NavigationScrollTest#udemySection</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">testcases.ScrollTest#scrollValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
