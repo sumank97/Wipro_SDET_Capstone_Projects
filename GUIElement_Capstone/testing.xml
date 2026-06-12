@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="GUI Automation Framework Suite">
+
+    <test name="GUI Tests">
+
+        <classes>
+
+            <class name="testcases.FormTest"/>
+            <class name="testcases.AlertTest"/>
+            <class name="testcases.DragDropTest"/>
+            <class name="testcases.MouseActionTest"/>
+            <class name="testcases.NavigationScrollTest"/>
+            <class name="testcases.ScrollTest"/>
+            <class name="testcases.UploadTest"/>
+
+        </classes>
+
+    </test>
+
+</suite>
